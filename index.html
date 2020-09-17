@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admission Form</title>
+  <style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  </style>
+</head>
+
+<body style="background-color:#7ff0dd">
+  <h1 style="text-align:center">Registration</h1>
+  <form class="" action="index.html" method="post">
+    <section style="border:1px solid black; border-radius: 10px; margin-bottom:15px; background-color:#8feb90">
+      <table>
+        <b style="margin-left:30px">
+          BASIC DETAILS
+        </b>
+
+        <tr>
+          <td>
+            <label for="formNo">Form Number</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="formNo" name="formNo" min="1" max="1000000000">
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="name">Name</label>
+          </td>
+
+          <td>
+            <input style="width:150px" type="text" id="name" name="name">
+
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width:40%">
+            <label for="rollNo">Roll Number</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="rollNo" name="rollNo" min="1" max="1000000000">
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Gender</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="birthday">DOB</label>
+
+          </td>
+          <td>
+            <input style="width:150px" type="date" id="birthday" name="birthday">
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="pwd">PWD</label>
+          </td>
+          <td style="width:43%">
+            <input type="radio" name="pwd" value="yes"> Yes
+            <input type="radio" name="pwd" value="female"> No
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="category">Category</label>
+          </td>
+          <td>
+            <select id="category" name="category">
+              <option value="gen">GEN</option>
+              <option value="ews">EWS</option>
+              <option value="obc">OBC</option>
+              <option value="scst">SC/ST</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <label for="address">Address</label><br>
+            <textarea id="address" name="address" rows="4" cols="50">
+
+            </textarea>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            PLEASE INPUT THE CORRECT CODE
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="pinCode">PIN CODE</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="pinCode" name="pinCode" min="1" max="1000000000">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <label for="studentPhone">PHONE OF STUDENT</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="studentPhone" name="studentPhone" min="1" max="1000000000">
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <label for="guardianPhone">PHONE OF GUARDIAN</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="guardianPhone" name="guardianPhone" min="1" max="1000000000">
+          </td>
+
+        </tr>
+
+
+      </table>
+    </section>
+
+    <section style="border:1px solid black; border-radius: 10px; margin-bottom:15px; background-color:#8feb90">
+      <table>
+        <b style="margin-left:30px">
+          ACADEMIC DETAILS
+        </b>
+
+        <tr>
+          <td style="width:40%">
+            <label for="course">COURSE</label>
+          </td>
+          <td>
+            <select id="course" name="course">
+              <option value="btech">B.Tech</option>
+              <option value="mtech">M.Tech</option>
+              <option value="phd">Ph.D.</option>
+
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="branch">Branch</label>
+          </td>
+
+          <td>
+            <input style="width:150px" type="text" id="branch" name="branch">
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="semester">Semester</label>
+          </td>
+          <td>
+            <select id="semester" name="semester">
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th.</option>
+              <option value="5th">5th</option>
+              <option value="6th">6th</option>
+              <option value="7th">7th</option>
+              <option value="8th">8th</option>
+
+            </select>
+              <label for="">(for which allotment will be done)</label>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <label for="allIndiaRank">ALL India Rank</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="allIndiaRank" name="allIndiaRank" min="1" max="1000000000">
+            <label for="">(2020 JEE MAIN / GATE)</label>
+          </td>
+
+        </tr>
+
+
+        <tr>
+          <td>
+            <label for="categoryRank">Category Rank</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="categoryRank" name="categoryRank" min="1" max="1000000000">
+            <label for="">(2020 JEE MAIN / GATE)</label>
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            <label for="cgpa">CGPA</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="cgpa" name="cgpa" min="1" max="1000000000">
+
+          </td>
+
+        </tr>
+
+
+        <tr>
+          <td>
+            <label for="backlog">Backlog</label>
+          </td>
+          <td>
+            <input type="radio" name="backlog" value="yes"> Yes
+            <input type="radio" name="backlog" value="no"> No
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="hostelAccomodation">Hostel Accomodation</label>
+          </td>
+          <td>
+            <input type="radio" name="hostelAccomodation" value="yes"> Yes
+            <input type="radio" name="hostelAccomodation" value="no"> No (If any)
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="hostelName">Name of Hostel</label>
+          </td>
+
+          <td>
+            <input style="width:150px" type="text" id="hostelName" name="hostelName">
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="roomNo">Room Number</label>
+          </td>
+          <td>
+            <input style="width:150px" type="number" id="roomNo" name="roomNo" min="1" max="1000000000">
+          </td>
+
+        </tr>
+
+
+
+      </table>
+    </section>
+
+    <section style="border:1px solid black; border-radius: 10px; background-color:#8feb90">
+      <table>
+
+          <b style="margin-left:30px">
+            ACCOUNT DETAILS FOR REFUNDING PROCESS
+          </b>
+
+          <tr>
+            <td style="width:41.5%">
+              <label for="accountHolderName">Account Holder Name</label>
+            </td>
+
+            <td>
+              <input style="width:150px" type="text" id="accountHolderName" name="accountHolderName">
+              <label for="">(As per bank passbook)</label>
+
+            </td>
+          </tr>
+
+
+
+                  <tr>
+                    <td>
+                      <label for="accountNumber">Account Number</label>
+                    </td>
+                    <td>
+                      <input style="width:150px" type="number" id="accountNumber" name="accountNumber" min="1" max="1000000000">
+                    </td>
+
+                  </tr>
+
+
+
+                  <tr>
+                    <td>
+                      <label for="ifscCode">IFSC Code</label>
+                    </td>
+
+                    <td>
+                      <input style="width:150px" type="text" id="ifscCode" name="ifscCode">
+
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      <label for="bankName">Bank Name</label>
+                    </td>
+
+                    <td>
+                      <input style="width:150px" type="text" id="bankName" name="bankName">
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label for="bankBranch">Bank Branch</label>
+                    </td>
+
+                    <td>
+                      <input style="width:150px" type="text" id="bankBranch" name="bankBranch">
+
+                    </td>
+                  </tr>
+
+
+
+
+
+
+      </table>
+    </section>
+
+  </form>
+
+  <footer style="text-align:center">
+      Name : <b>Avinash Kumar</b><br>
+      Roll No. : <b>1906059</b>
+  </footer>
+
+</body>
+
+</html>
